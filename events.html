@@ -44,11 +44,9 @@
                 this.state = {
                     count: 0
                 }
-
-                this.increase = this.increase.bind(this)
             }
 
-            increase(event) {
+            increase = (event) => {
                 var currentCount = this.state.count
 
                 if (event.shiftKey) {
